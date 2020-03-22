@@ -1,9 +1,15 @@
-## 基于 Ant Design Pro 4 实现多标签页面，包括：路由联动，列表，多详情页共存，自动新增、关闭标签等功能，如图：
+### 基于 Ant Design Pro 4 实现多标签页面，包括：路由联动，列表，多详情页共存，自动新增、关闭标签等功能，上图：
 
+![demo-1](https://github.com/Fengly0503/ant_pro_tabs/blob/master/public/demo-images/demo-1.jpg)
+![demo-1](https://github.com/Fengly0503/ant_pro_tabs/blob/master/public/demo-images/demo-2.jpg)
+![demo-1](https://github.com/Fengly0503/ant_pro_tabs/blob/master/public/demo-images/demo-3.jpg)
 
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
+#### 关键修改
 
-### Environment Prepare
+BasicLayout.tsx 使用layout重写了原文件，使用时不依赖config中的路由配置，可酌情使用；
+BasicLayoutBak.tsx 原布局基础上实现多标签，依赖config中路由配置；
+
+#### 使用方式
 
 Install `node_modules`:
 
