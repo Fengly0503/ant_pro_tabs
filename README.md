@@ -1,4 +1,5 @@
-# Ant Design Pro
+# 基于 Ant Design Pro 4 实现多标签页面，包括：路由联动，列表，多详情页共存，自动新增、关闭标签等功能，如图：
+
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
