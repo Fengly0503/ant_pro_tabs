@@ -2,18 +2,9 @@ import React, {Component} from 'react';
 import {Link} from 'umi';
 import {connect} from 'dva';
 
-// import { connect } from 'react-redux';
-// import { ChangeTabs, ReduceTab } from '@redux/actions/switchTabs.act';
-
 import {
-  // AndroidOutlined,
-  // AppleOutlined,
   AppstoreOutlined,
-  // BellOutlined,
   BuildOutlined,
-  // DashboardFilled,
-  // SearchOutlined,
-  // MailOutlined,
   HomeOutlined,
   UnorderedListOutlined,
   LoginOutlined,

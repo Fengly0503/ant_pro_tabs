@@ -14,27 +14,18 @@ import * as React from 'react';
 import {Link} from 'umi';
 import {Dispatch} from 'redux';
 import {connect} from 'dva';
-// import { GithubOutlined } from '@ant-design/icons';
 import {Result, Button, Layout, Menu} from 'antd';
 import Authorized from '@/utils/Authorized';
-// import RightContent from '@/components/GlobalHeader/RightContent';
+
 import {ConnectState} from '@/models/connect';
 import {isAntDesignPro, getAuthorityFromRouter} from '@/utils/utils';
 
 
 import {
-  // AndroidOutlined,
-  // AppleOutlined,
   AppstoreOutlined,
-  // BellOutlined,
   BuildOutlined,
-  // DashboardFilled,
-  // SearchOutlined,
-  // MailOutlined,
-  // HomeOutlined,
   SettingOutlined,
   TeamOutlined,
-  // MenuFoldOutlined as LegacyIcon,
 } from '@ant-design/icons';
 import styles from './BasicLayout.less';
 import logo from '../assets/logo.svg';

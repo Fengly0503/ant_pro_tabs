@@ -41,7 +41,7 @@ const CollectionCreateForm: React.FC<CollectionCreateFormProps> = ({visible, pos
                 message.info(`发表成功：${res.createOneComment.speak}`);
                 onCancel();
               } else {
-                message.info('添加失败');
+                message.error('添加失败');
               }
             });
           })

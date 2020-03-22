@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
 import {Form, Input, InputNumber, Button, message} from 'antd';
-// import commonFetch from '../../../utils/commonFetch';
 import {connect, useDispatch} from "react-redux";
-// import router from "umi/router";
 
 const layout = {
   labelCol: {
