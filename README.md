@@ -15,8 +15,11 @@
 * tab内的标签状态储存到redux全局store中，在layout组件中拦截路由变化，变更store内tab数据；
 * 要实现类型打开多个详情页面，则在tab key中加入主键参数，实现一个详情组件同时开多个详情页功能；
 
-#### 安装
+#### 使用
 
+```bash
+git clone https://github.com/Fengly0503/ant_pro_tabs.git
+```
 Install `node_modules`:
 
 ```bash
