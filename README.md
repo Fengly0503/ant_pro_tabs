@@ -6,10 +6,16 @@
 
 #### 关键修改
 
-BasicLayout.tsx 使用layout重写了原文件，使用时不依赖config中的路由配置，可酌情使用；
-BasicLayoutBak.tsx 原布局基础上实现多标签，依赖config中路由配置；
+* BasicLayout.tsx 使用layout重写了原文件，使用时不依赖config中的路由配置，可酌情使用；
+* BasicLayoutBak.tsx 原布局基础上实现多标签，依赖config中路由配置；
 
-#### 使用方式
+#### 原理
+
+* 传统单页面路由切换时替换`<content></content>`内组件，在原来的基础上嵌套一层tabs,类似`<tab><content></content></tab>`；
+* tab内的标签状态储存到redux全局store中，在layout组件中拦截路由变化，变更store内tab数据；
+* 要实现类型打开多个详情页面，则在tab key中加入主键参数，实现一个详情组件同时开多个详情页功能；
+
+#### 安装
 
 Install `node_modules`:
 
@@ -23,42 +29,18 @@ or
 yarn
 ```
 
-### Provided Scripts
-
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-#### Start project
+#### 启动
 
 ```bash
 npm start
 ```
 
-#### Build project
+#### 打包
 
 ```bash
 npm run build
 ```
 
-#### Check code style
+#### 参考文档
 
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-#### Test code
-
-```bash
-npm test
-```
-
-### More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+And Design Pro： [官网](https://pro.ant.design). git 地址：[github](https://github.com/ant-design/ant-design-pro).
