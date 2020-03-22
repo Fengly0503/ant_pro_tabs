@@ -1,0 +1,77 @@
+.antLayout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .MenuLogo {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+.header > ul {
+  line-height: 48px;
+  border-bottom: none;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  font-size: 18px;
+  color: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.mainContent {
+  margin: 16px 12px 0;
+  background: #fff;
+  flex: 1;
+  overflow: auto;
+}
+
+.layoutFooter {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  min-height: 60px;
+  max-height: 60px;
+  //height: $height;
+  color: #999;
+
+  .help {
+    span {
+      padding: 0 20px;
+    }
+  }
+}
+
+.tabPanel {
+  margin: 0 0 16px -1px;
+}
