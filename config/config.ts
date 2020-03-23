@@ -177,6 +177,6 @@ export default {
   },
   proxy: proxy[REACT_APP_ENV || 'dev'],
   chainWebpack: webpackPlugin,
-  base: '/pc/',
-  publicPath: '/pc/',
+  base: '/ant-pro-tabs/',
+  publicPath: '/ant-pro-tabs/',
 } as IConfig;

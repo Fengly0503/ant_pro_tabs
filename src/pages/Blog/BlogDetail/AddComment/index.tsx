@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Modal, Form, Input, message,
 } from 'antd';
-import commonFetch from '../../../../utils/commonFetch';
 
 const {TextArea} = Input;
 
@@ -29,21 +28,23 @@ const CollectionCreateForm: React.FC<CollectionCreateFormProps> = ({visible, pos
               message.error('请先登陆！');
               return;
             }
-            const args = {
-              "data": {
-                "speak": values.speak,
-                "post": {"connect": {"id": postid}},
-                "speaker": {"connect": {"id": window.userInfo.id}}
-              }
-            };
-            commonFetch.fetchtData('createOneComment', args).then((res: any) => {
-              if (res) {
-                message.info(`发表成功：${res.createOneComment.speak}`);
-                onCancel();
-              } else {
-                message.error('添加失败');
-              }
-            });
+            message.success('评论成功！');
+            // TODO 提交数据
+            // const args = {
+            //   "data": {
+            //     "speak": values.speak,
+            //     "post": {"connect": {"id": postid}},
+            //     "speaker": {"connect": {"id": window.userInfo.id}}
+            //   }
+            // };
+            // commonFetch.fetchtData('createOneComment', args).then((res: any) => {
+            //   if (res) {
+            //     message.info(`发表成功：${res.createOneComment.speak}`);
+            //     onCancel();
+            //   } else {
+            //     message.error('添加失败');
+            //   }
+            // });
           })
           .catch(info => {
             console.log('Validate Failed:', info);
