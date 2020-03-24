@@ -10,7 +10,7 @@
 * BasicLayout.tsx 使用layout重写了原文件，使用时不依赖config中的路由配置，可酌情使用；
 * BasicLayoutBak.tsx 原布局基础上实现多标签，依赖config中路由配置；
 
-#### 原理
+#### 实现思路
 
 * 传统单页面路由切换时替换`<content></content>`内组件，在原来的基础上嵌套一层tabs,类似`<tab><content></content></tab>`；
 * tab内的标签状态储存到redux全局store中，在layout组件中拦截路由变化，变更store内tab数据；
