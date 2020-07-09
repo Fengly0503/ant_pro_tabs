@@ -1,5 +1,4 @@
 #### 基于 Ant Design Pro 4 实现多标签页面，包括：路由联动，列表，多详情页共存，自动新增、关闭标签等功能：
-在线
 
 [demo地址](http://pc.loveeveryday.cn/ant-pro-tabs)
 
